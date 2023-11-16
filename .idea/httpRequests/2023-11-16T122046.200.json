@@ -1,0 +1,53 @@
+{
+  "error": false,
+  "data": [
+    {
+      "id": 5,
+      "title": "game of thrones",
+      "author": "james cameron",
+      "created_at": "0001-01-01T00:00:00Z",
+      "updated_at": "0001-01-01T00:00:00Z",
+      "deleted_at": null,
+      "deleted": 0
+    },
+    {
+      "id": 4,
+      "title": "midnight runner",
+      "author": "jonathan edwards",
+      "created_at": "0001-01-01T00:00:00Z",
+      "updated_at": "0001-01-01T00:00:00Z",
+      "deleted_at": null,
+      "deleted": 0
+    },
+    {
+      "id": 3,
+      "title": "harry potter",
+      "author": "frank edwards",
+      "created_at": "0001-01-01T00:00:00Z",
+      "updated_at": "0001-01-01T00:00:00Z",
+      "deleted_at": null,
+      "deleted": 0
+    },
+    {
+      "id": 2,
+      "title": "this is me",
+      "author": "john doe",
+      "created_at": "0001-01-01T00:00:00Z",
+      "updated_at": "0001-01-01T00:00:00Z",
+      "deleted_at": null,
+      "deleted": 0
+    },
+    {
+      "id": 1,
+      "title": "game of thrones unlimited",
+      "author": "thomas edison",
+      "created_at": "0001-01-01T00:00:00Z",
+      "updated_at": "0001-01-01T00:00:00Z",
+      "deleted_at": null,
+      "deleted": 0
+    }
+  ],
+  "page": 1,
+  "size": 100,
+  "row_count": 5
+}

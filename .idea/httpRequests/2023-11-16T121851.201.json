@@ -1,0 +1,12 @@
+{
+  "error": false,
+  "data": {
+    "id": 5,
+    "title": "cool aid",
+    "author": "johnny depp",
+    "created_at": "2023-11-16T12:18:51.523634+01:00",
+    "updated_at": "2023-11-16T12:18:51.53+01:00",
+    "deleted_at": null,
+    "deleted": 0
+  }
+}
