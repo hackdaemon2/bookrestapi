@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	loaderInstance := GetConfigurationLoaderInstance()
+	loaderInstance := GetInstanceConfigurationLoader()
 	configuration, configurationError := loaderInstance.LoadConfiguration()
 
 	if configurationError != nil {

@@ -13,7 +13,7 @@ var errMsg string
 
 type Middleware struct{}
 
-func GetMiddlewareInstance() *Middleware {
+func GetInstanceMiddleware() *Middleware {
 	if middlewareInstance == nil {
 		Once.Do(func() { middlewareInstance = new(Middleware) })
 	}

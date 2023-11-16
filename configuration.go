@@ -25,7 +25,7 @@ var paginator = new(pagination.Pagination).Default()
 
 type ConfigurationLoader struct{}
 
-func GetConfigurationLoaderInstance() *ConfigurationLoader {
+func GetInstanceConfigurationLoader() *ConfigurationLoader {
 	if configurationLoader == nil {
 		Once.Do(func() { configurationLoader = new(ConfigurationLoader) })
 	}
@@ -90,7 +90,7 @@ func (configurationLoader *ConfigurationLoader) RegisterBookRoutes(c *controller
 
 // GetRouteHandler bootstrap book routes
 func (configurationLoader *ConfigurationLoader) GetRouteHandler(gormDb *gorm.DB, config models.IAppConfig) *gin.Engine {
-	middleware := GetMiddlewareInstance()
+	middleware := GetInstanceMiddleware()
 	route := gin.Default()
 
 	route.Use(middleware.RequestLogger())
