@@ -234,3 +234,7 @@ w
 G.idea/sonarlint/issuestore/2/f/2f42fac68b22a5b25fe140fb5cc9b23dd7b04199,d/2/d2dc1ca2615c1f9dc35afc6a652dc6fd3c069800
 N
 app/migrations/updatecolumn.go,e/1/e1c411f34a84d2d9d43bcefc3bb76a26e77748fd
+F
+app/models/booktype.go,2/6/26ee90169d9280cfab21d6c4e026b1d4cb7fe1b2
+G
+app/models/errortype.go,6/4/64b0a750e13bfc75665adae43ca770c22d0e9739
