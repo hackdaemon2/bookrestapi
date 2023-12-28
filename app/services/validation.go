@@ -21,18 +21,25 @@ func GetValidationInstance() *Validation {
 	if validationInstance == nil {
 		once.Do(func() { validationInstance = new(Validation) })
 	}
+
 	return validationInstance
 }
 
 func (validation *Validation) ValidateStruct(payload any) *map[string]string {
-	err := validator.New().Struct(payload)
+	validationError := validator.New().Struct(payload)
 	validationErrors := make(map[string]string)
-	if err != nil {
-		for _, err := range err.(validator.ValidationErrors) {
+
+	if validationError != nil {
+		for _, err := range validationError.(validator.ValidationErrors) {
 			fieldName := validation.extractFieldName(err.Namespace(), payload)
-			validationErrors[fieldName] = fmt.Sprintf("JSON field '%s' is invalid: %s[%s]", fieldName, err.Tag(), err.Param())
+			validationErrors[fieldName] = fmt.Sprintf(
+				"JSON field '%s' is invalid: %s[%s]",
+				fieldName,
+				err.Tag(),
+				err.Param())
 		}
 	}
+
 	return &validationErrors
 }
 
@@ -44,9 +51,11 @@ func (validation *Validation) extractFieldName(namespace string, payload any) st
 
 func (validation *Validation) getJSONFieldName(fieldName string, structType reflect.Type) string {
 	field, found := structType.FieldByName(fieldName)
+
 	if !found {
 		return ""
 	}
+
 	jsonTag := field.Tag.Get("json")
 	return jsonTag
 }

@@ -1,5 +1,0 @@
-{
-  "error": true,
-  "error_msg": "Book does not exist",
-  "error_type": "RESOURCE_NOT_FOUND"
-}

@@ -22,4 +22,5 @@ const (
 	NotDeleted                   = 0
 	DefaultMinPageSize           = 1
 	DefaultMaxPageSize           = 1000
+	DateFormat                   = "2006-01-02T15:04:05Z07:00"
 )

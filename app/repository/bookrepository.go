@@ -60,9 +60,8 @@ func (bookRepository *BookRepository) Update(book models.Book) (models.Book, err
 
 // Delete removes a user from the database by ID
 func (bookRepository *BookRepository) Delete(book *models.Book) (int64, error) {
-	var now = time.Now()
 	book.Deleted = 1
-	book.DeletedAt = &now
+	book.DeletedAt = models.CustomDateTimeMySQL{Time: time.Now()}
 	result := bookRepository.db.Updates(&book)
 	return result.RowsAffected, nil
 }

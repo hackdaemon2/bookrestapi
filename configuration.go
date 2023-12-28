@@ -72,9 +72,6 @@ func (configurationLoader *ConfigurationLoader) ConnectDatabase(config models.IA
 	dbConfig.SetConnMaxLifetime(time.Duration(config.MaximumTime()) * time.Second)
 	dbConfig.SetMaxIdleConns(config.MaximumIdleConnection())
 
-	log.Println("Running Migrations")
-	configurationLoader.autoMigrate(db)
-
 	log.Println("Connected to the database")
 	return db, nil
 }
@@ -104,13 +101,4 @@ func (configurationLoader *ConfigurationLoader) GetRouteHandler(gormDb *gorm.DB,
 	configurationLoader.RegisterBookRoutes(bookController, route)
 
 	return route
-}
-
-// autoMigrate run DB migrations
-func (configurationLoader *ConfigurationLoader) autoMigrate(db *gorm.DB) {
-	err := db.AutoMigrate(&models.Book{})
-	if err != nil {
-		log.Println(err.Error())
-		return
-	}
 }

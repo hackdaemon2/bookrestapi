@@ -1,11 +1,33 @@
-GET http://localhost:3000/books?page=1&size=100
+GET http://localhost:3000/books?page=1&size=10
 Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T142347.200.json
+<> 2023-12-28T224315.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=10
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T224301.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=1
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T224255.200.json
 
 ###
 
@@ -16,140 +38,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T124837.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T124828.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T124142.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T124049.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T123854.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T123306.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T122046.200.json
-
-###
-
-PUT http://localhost:3000/book/5
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Content-Length: 61
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "author": "james cameron",
-  "title": "game of thrones"
-}
-
-<> 2023-11-16T122036.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T122009.200.json
-
-###
-
-PUT http://localhost:3000/book/5
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Content-Length: 61
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "author": "james cameron",
-  "title": "game of thrones"
-}
-
-<> 2023-11-16T122001.200.json
-
-###
-
-GET http://localhost:3000/book/5
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T121940.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T121923.200.json
+<> 2023-12-28T224221.200.json
 
 ###
 
@@ -166,7 +55,7 @@ Accept-Encoding: br,deflate,gzip,x-gzip
   "title": "cool aid"
 }
 
-<> 2023-11-16T121851.201.json
+<> 2023-12-28T224206.201.json
 
 ###
 
@@ -177,244 +66,298 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T121819.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T121657.200.json
-
-###
-
-GET http://localhost:3000/book/7
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T113002.404.json
-
-###
-
-GET http://localhost:3000/book/7
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112954.404.json
-
-###
-
-GET http://localhost:3000/book/3
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112948.200.json
-
-###
-
-GET http://localhost:3000/book/3
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112945.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112938.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112933.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112928.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112812.200.json
-
-###
-
-GET http://localhost:3000/book/3
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T112800.200.json
+<> 2023-12-28T224157.200.json
 
 ###
 
 POST http://localhost:3000/books
 Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
-Content-Length: 64
+Content-Length: 52
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 {
-  "author": "jonathan edwards",
-  "title": "midnight runner"
+  "author": "johnny depp",
+  "title": "cool aid"
 }
 
-<> 2023-11-16T110523.201.json
+<> 2023-12-28T223732.500.json
 
 ###
 
-GET http://localhost:3000/book/3
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-28T223121.500.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-28T222948.500.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T221622.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T221431.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T220130.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T220024.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T214658.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T214639.200.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-28T214622.201.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T214407.200.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-28T214334.201.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T214227.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T211938.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T211508.200.json
+
+###
+
+GET http://localhost:3000/book/5
 Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T110422.200.json
+<> 2023-12-28T210756.404.json
 
 ###
 
-GET http://localhost:3000/book/1
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-28T210658.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-21T121556.200.json
+
+###
+
+PUT http://localhost:3000/book/5
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 61
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "james cameron",
+  "title": "game of thrones"
+}
+
+<> 2023-12-21T121521.404.json
+
+###
+
+GET http://localhost:3000/book/5
 Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T110412.200.json
+<> 2023-12-21T121520.404.json
 
 ###
 
-GET http://localhost:3000/book/1
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T110407.200.json
-
-###
-
-GET http://localhost:3000/book/1
-Authorization: abearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T110401.401.json
-
-###
-
-GET http://localhost:3000/book/1
-Authorization: abearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T105117.401.json
-
-###
-
-GET http://localhost:3000/book/1
-Authorization: help a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T105105.401.json
-
-###
-
-GET http://localhost:3000/book/1
-Authorization: bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T105055.200.json
-
-###
-
-GET http://localhost:3000/book/1
+POST http://localhost:3000/books
 Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
+Content-Length: 52
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T105049.200.json
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
 
-###
-
-GET http://localhost:3000/book/1
-Authorization: dBearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T105040.401.json
-
-###
-
-GET http://localhost:3000/book/1
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T094157.200.json
+<> 2023-12-21T121519.500.json
 
 ###
 
@@ -425,7 +368,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T094143.200.json
+<> 2023-12-21T121517.200.json
 
 ###
 
@@ -436,7 +379,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T092930.200.json
+<> 2023-12-21T121432.200.json
 
 ###
 
@@ -447,7 +390,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T092851.200.json
+<> 2023-12-17T195428.200.json
 
 ###
 
@@ -458,7 +401,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T091415.200.json
+<> 2023-12-17T143451.200.json
 
 ###
 
@@ -469,17 +412,75 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085819.200.json
+<> 2023-12-17T142748.200.json
 
 ###
 
-GET http://localhost:3000/books?page=1&size=100
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
 Content-Type: application/json
+Content-Length: 52
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085805.401.json
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-17T142649.201.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-17T142301.500.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-17T134616.500.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-12-17T134033.500.json
 
 ###
 
@@ -490,7 +491,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085651.200.json
+<> 2023-12-17T134022.200.json
 
 ###
 
@@ -501,18 +502,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085413.200.json
-
-###
-
-GET http://localhost:3000/books?page=1&size=100
-Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a9231
-Content-Type: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-16T085403.401.json
+<> 2023-12-17T133045.200.json
 
 ###
 
@@ -523,7 +513,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085351.200.json
+<> 2023-12-17T132923.200.json
 
 ###
 
@@ -534,7 +524,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085324.200.json
+<> 2023-12-17T125239.200.json
 
 ###
 
@@ -545,7 +535,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085309.200.json
+<> 2023-12-17T125029.200.json
 
 ###
 
@@ -556,7 +546,7 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T085227.200.json
+<> 2023-12-17T124841.200.json
 
 ###
 
@@ -567,7 +557,66 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-16T083920.200.json
+<> 2023-12-17T123558.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-16T002411.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-16T001524.200.json
+
+###
+
+GET http://localhost:3000/books?page=1&size=100
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-16T151034.200.json
+
+###
+
+POST http://localhost:3000/books
+Authorization: Bearer a5ff264fbac3ad7ab0fe5040fa95a923
+Content-Type: application/json
+Content-Length: 52
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "author": "johnny depp",
+  "title": "cool aid"
+}
+
+<> 2023-11-16T150952.201.json
 
 ###
 

@@ -117,7 +117,8 @@ func (bookService *BookService) Create(context *gin.Context) {
 	book := models.Book{}
 	book.Title = bookRequest.Title
 	book.Author = bookRequest.Author
-	book.CreatedAt = time.Now()
+	book.CreatedAt = models.CustomDateTimeMySQL{Time: time.Now()}
+	book.DeletedAt = models.CustomDateTimeMySQL{}
 	book, err := bookService.bookRepository.Create(book)
 
 	if err != nil {
@@ -151,6 +152,9 @@ func (bookService *BookService) Update(context *gin.Context) {
 		return
 	}
 
+	jsonData, _ := json.Marshal(bookRequest)
+	log.Println(fmt.Sprintf(models.RequestLogMessage, string(jsonData)))
+
 	// Validate the request payload
 	if err := validate.ValidateStruct(bookRequest); len(*err) != 0 {
 		errorResponse = FormulateErrorResponse("Request validation errors", models.ValidationError, *err)
@@ -159,9 +163,6 @@ func (bookService *BookService) Update(context *gin.Context) {
 	}
 
 	id, _ := strconv.Atoi(context.Param("id"))
-
-	jsonData, _ := json.Marshal(bookRequest)
-	log.Println(fmt.Sprintf(models.RequestLogMessage, string(jsonData)))
 
 	book, err := bookService.bookRepository.FindOne(int64(id))
 
@@ -179,7 +180,7 @@ func (bookService *BookService) Update(context *gin.Context) {
 
 	book.Author = bookRequest.Author
 	book.Title = bookRequest.Title
-	book.UpdatedAt = time.Now()
+	book.UpdatedAt = models.CustomDateTimeMySQL{Time: time.Now()}
 	updatedBook, err := bookService.bookRepository.Update(book)
 
 	if err != nil {
