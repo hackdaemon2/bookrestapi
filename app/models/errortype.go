@@ -2,10 +2,10 @@ package models
 
 type (
 	BaseErrorResponder interface {
-		SetBaseError(baseError BaseErrorDTO)
+		SetBaseError(baseError BaseErrorType)
 	}
 
-	BaseErrorDTO struct {
+	BaseErrorType struct {
 		Error       bool              `json:"error"`
 		ErrorMsg    *string           `json:"error_msg,omitempty"`
 		ErrorType   string            `json:"error_type,omitempty"`

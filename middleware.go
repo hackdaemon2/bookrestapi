@@ -26,7 +26,7 @@ func (middleware *Middleware) RequestAuthorization(config models.IAppConfig) gin
 
 		if authorization == "" {
 			errMsg = "Authorization header must be provided"
-			context.JSON(401, models.BaseErrorDTO{Error: true, ErrorMsg: &errMsg})
+			context.JSON(401, models.BaseErrorType{Error: true, ErrorMsg: &errMsg})
 			context.Abort()
 			return
 		}
@@ -37,7 +37,7 @@ func (middleware *Middleware) RequestAuthorization(config models.IAppConfig) gin
 
 		if !hasPrefixLowerCase && !hasPrefixUpperCase {
 			errMsg = "Authorization header 'Bearer' must be provided"
-			context.JSON(401, models.BaseErrorDTO{Error: true, ErrorMsg: &errMsg})
+			context.JSON(401, models.BaseErrorType{Error: true, ErrorMsg: &errMsg})
 			context.Abort()
 			return
 		}
@@ -46,7 +46,7 @@ func (middleware *Middleware) RequestAuthorization(config models.IAppConfig) gin
 
 		if config.BearerToken() != token {
 			errMsg = "Authorization token is invalid"
-			context.JSON(401, models.BaseErrorDTO{Error: true, ErrorMsg: &errMsg})
+			context.JSON(401, models.BaseErrorType{Error: true, ErrorMsg: &errMsg})
 			context.Abort()
 			return
 		}

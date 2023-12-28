@@ -7,74 +7,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f39f621-d566-4153-929a-a4b00ea91952" name="Changes" comment="change name of factory methods for singleton classes in configuration and middleware files">
-      <change afterPath="$PROJECT_DIR$/app/migrations/updatecolumn.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f86258f9-a5a4-4171-bca3-0e7d006ceeea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f86258f9-a5a4-4171-bca3-0e7d006ceeea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f86258f9-a5a4-4171-bca3-0e7d006ceeea/storage_v2/_src_/schema/golangbooks.lI1WLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f86258f9-a5a4-4171-bca3-0e7d006ceeea/storage_v2/_src_/schema/golangbooks.lI1WLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T083920.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085227.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085309.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085324.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085351.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085403.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085413.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085651.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085805.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T085819.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T091415.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T092851.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T092930.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T094143.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T094157.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T105040.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T105049.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T105055.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T105105.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T105117.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T110401.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T110407.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T110412.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T110422.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T110523.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112800.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112812.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112928.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112933.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112938.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112945.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112948.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T112954.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T113002.404.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T121657.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T121819.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T121851.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T121923.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T121940.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T122001.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T122009.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T122036.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T122046.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T123306.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T123854.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T124049.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T124142.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T124828.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T124837.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-11-16T142347.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c903168ac14d9ee80bf0dea89c846175eacc45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/9/29c903168ac14d9ee80bf0dea89c846175eacc45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="1f39f621-d566-4153-929a-a4b00ea91952" name="Changes" comment="code rafactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/basemodel.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/basemodel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/constants.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/bookrepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/bookrepository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bookdto.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bookdto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/books.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/books.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/errordto.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/errordto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pagination/pagination.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pagination/pagination.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/services/bookservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/bookservice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/validation.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/validation.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/errorhelper.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/errorhelper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="change name of factory methods for singleton classes in configuration and middleware files" />
-    <option name="LAST_COMMIT_MESSAGE" value="change name of factory methods for singleton classes in configuration and middleware files" />
+    <MESSAGE value="code rafactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="code rafactor" />
   </component>
   <component name="VgoProject">
     <auto-vendoring-mode>false</auto-vendoring-mode>

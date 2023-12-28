@@ -13,7 +13,7 @@ type Pagination struct{}
 
 // Default Create a new pagination middleware with default values
 func (pagination *Pagination) Default() gin.HandlerFunc {
-	return pagination.init(&models.ResourcePaginationConfigDTO{
+	return pagination.init(&models.ResourcePaginationConfigType{
 		PageText:    models.DefaultPageText,
 		SizeText:    models.DefaultSizeText,
 		Page:        models.DefaultPage,
@@ -24,13 +24,13 @@ func (pagination *Pagination) Default() gin.HandlerFunc {
 }
 
 // init a new pagination middleware with custom values
-func (pagination *Pagination) init(resourcePaginationDTO *models.ResourcePaginationConfigDTO) gin.HandlerFunc {
+func (pagination *Pagination) init(resourcePaginationType *models.ResourcePaginationConfigType) gin.HandlerFunc {
 	return func(context *gin.Context) {
 		// Extract the page from the query string and convert it to an integer
-		pageStr := context.DefaultQuery(resourcePaginationDTO.PageText, resourcePaginationDTO.Page)
+		pageStr := context.DefaultQuery(resourcePaginationType.PageText, resourcePaginationType.Page)
 		page, pageError := strconv.Atoi(pageStr)
 
-		var errorResponse models.BaseErrorDTO
+		var errorResponse models.BaseErrorType
 		var errMessage string
 
 		if pageError != nil {
@@ -49,7 +49,7 @@ func (pagination *Pagination) init(resourcePaginationDTO *models.ResourcePaginat
 		}
 
 		// Extract the size from the query string and convert it to an integer
-		sizeStr := context.DefaultQuery(resourcePaginationDTO.SizeText, resourcePaginationDTO.PageSize)
+		sizeStr := context.DefaultQuery(resourcePaginationType.SizeText, resourcePaginationType.PageSize)
 		size, sizeError := strconv.Atoi(sizeStr)
 
 		if sizeError != nil {
@@ -60,9 +60,9 @@ func (pagination *Pagination) init(resourcePaginationDTO *models.ResourcePaginat
 		}
 
 		// Validate for min and max page size
-		if size < resourcePaginationDTO.MinPageSize || size > resourcePaginationDTO.MaxPageSize {
-			minSize := strconv.Itoa(resourcePaginationDTO.MinPageSize)
-			maxSize := strconv.Itoa(resourcePaginationDTO.MaxPageSize)
+		if size < resourcePaginationType.MinPageSize || size > resourcePaginationType.MaxPageSize {
+			minSize := strconv.Itoa(resourcePaginationType.MinPageSize)
+			maxSize := strconv.Itoa(resourcePaginationType.MaxPageSize)
 			errorMessage := fmt.Sprintf("page size must be between %s and %s", minSize, maxSize)
 			errorResponse = services.FormulateErrorResponse(errorMessage, models.ValidationError, nil)
 			context.AbortWithStatusJSON(http.StatusBadRequest, errorResponse)
@@ -70,8 +70,8 @@ func (pagination *Pagination) init(resourcePaginationDTO *models.ResourcePaginat
 		}
 
 		// Set the page and size in the gin context
-		context.Set(resourcePaginationDTO.PageText, page)
-		context.Set(resourcePaginationDTO.SizeText, size)
+		context.Set(resourcePaginationType.PageText, page)
+		context.Set(resourcePaginationType.SizeText, size)
 
 		context.Next()
 	}

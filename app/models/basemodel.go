@@ -61,6 +61,7 @@ func (ct *CustomDateTimeMySQL) Scan(value interface{}) error {
 }
 
 type BaseModel struct {
+	ID        uint                `json:"id" gorm:"primary_key;column:id"`
 	CreatedAt CustomDateTimeMySQL `json:"created_at" gorm:"column:created_at"`
 	UpdatedAt CustomDateTimeMySQL `json:"updated_at" gorm:"column:updated_at"`
 	DeletedAt CustomDateTimeMySQL `json:"deleted_at" gorm:"column:deleted_at"`

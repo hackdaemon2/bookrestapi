@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-var errorResponse models.BaseErrorDTO
+var errorResponse models.BaseErrorType
 
 // BookService provides business logic for Book operations
 type BookService struct {
@@ -42,12 +42,12 @@ func (bookService *BookService) FindAll(context *gin.Context) {
 		rowCount, _ = bookService.bookRepository.CountAll()
 	}
 
-	response := models.BookPaginationResponseDTO{
+	response := models.BookPaginationResponseType{
 		Page:     &page,
 		Data:     data,
 		Size:     &size,
 		RowCount: &rowCount,
-		BaseErrorDTO: models.BaseErrorDTO{
+		BaseErrorType: models.BaseErrorType{
 			Error: false,
 		},
 	}
@@ -72,21 +72,21 @@ func (bookService *BookService) FindOne(context *gin.Context) {
 		return
 	}
 
-	response := models.BookResponseDTO{}
+	response := models.BookResponseType{}
 
 	if book.ID == 0 {
 		log.Println("Book does not exist")
 		errMsg := "Book does not exist"
-		response.BaseErrorDTO.Error = true
-		response.BaseErrorDTO.ErrorMsg = &errMsg
-		response.BaseErrorDTO.ErrorType = models.ResourceNotFound
+		response.BaseErrorType.Error = true
+		response.BaseErrorType.ErrorMsg = &errMsg
+		response.BaseErrorType.ErrorType = models.ResourceNotFound
 		jsonData, _ := json.Marshal(response)
 		log.Println(fmt.Sprintf(models.ResponseLogMessage, string(jsonData)))
 		context.JSON(http.StatusNotFound, response)
 		return
 	}
 
-	response.BaseErrorDTO.Error = false
+	response.BaseErrorType.Error = false
 	response.Data = book
 
 	jsonData, _ := json.Marshal(response)
@@ -96,7 +96,7 @@ func (bookService *BookService) FindOne(context *gin.Context) {
 
 // Create creates a new book in the database
 func (bookService *BookService) Create(context *gin.Context) {
-	var bookRequest models.BookRequestDTO
+	var bookRequest models.BookRequestType
 
 	if err := context.ShouldBindJSON(&bookRequest); err != nil {
 		errorResponse = FormulateErrorResponse("Unable to bind request", models.BindingError, nil)
@@ -135,7 +135,7 @@ func (bookService *BookService) Create(context *gin.Context) {
 		return
 	}
 
-	response := models.BookResponseDTO{Data: book, BaseErrorDTO: models.BaseErrorDTO{Error: false}}
+	response := models.BookResponseType{Data: book, BaseErrorType: models.BaseErrorType{Error: false}}
 
 	jsonData, _ = json.Marshal(response)
 	log.Println(fmt.Sprintf(models.ResponseLogMessage, string(jsonData)))
@@ -144,7 +144,7 @@ func (bookService *BookService) Create(context *gin.Context) {
 
 // Update updates a book in the database
 func (bookService *BookService) Update(context *gin.Context) {
-	var bookRequest models.BookRequestDTO
+	var bookRequest models.BookRequestType
 
 	if err := context.ShouldBindJSON(&bookRequest); err != nil {
 		errorResponse = FormulateErrorResponse("Unable to bind request", models.BindingError, nil)
@@ -189,7 +189,7 @@ func (bookService *BookService) Update(context *gin.Context) {
 		return
 	}
 
-	response := models.BookResponseDTO{Data: updatedBook, BaseErrorDTO: models.BaseErrorDTO{Error: false}}
+	response := models.BookResponseType{Data: updatedBook, BaseErrorType: models.BaseErrorType{Error: false}}
 	jsonData, _ = json.Marshal(response)
 	log.Println(fmt.Sprintf(models.ResponseLogMessage, string(jsonData)))
 	context.JSON(http.StatusOK, response)

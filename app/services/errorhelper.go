@@ -7,8 +7,8 @@ import (
 	"restapi/app/models"
 )
 
-func FormulateErrorResponse(errorMessage string, errorType string, errorMap map[string]string) models.BaseErrorDTO {
-	response := models.BaseErrorDTO{
+func FormulateErrorResponse(errorMessage string, errorType string, errorMap map[string]string) models.BaseErrorType {
+	response := models.BaseErrorType{
 		ErrorMsg:  &errorMessage,
 		Error:     true,
 		ErrorType: errorType,
